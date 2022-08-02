@@ -1,0 +1,166 @@
+/* Général */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Quicksand";
+  background-color: #ececec;
+}
+fieldset{
+  margin-bottom: 30px;
+}
+legend{
+  font-weight: 700;
+}
+p{
+  word-break: break-word;
+}
+.container{
+  margin: 0 auto;
+}
+.container-logo{
+  border-bottom: 1px solid #d5d5d5;
+  padding: 5px 5px 12px;
+  margin-bottom: 50px;
+}
+.logo{
+  display: block;
+  margin: 0 auto;
+}
+
+/* Boutons communs */
+.btn{
+  border-radius: 5px;
+  background-color: #d5d5d5;
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  transition: all .4s ease-in-out;
+}
+.active-btn{
+  background-color: #ff8c00;
+  color: white;
+}
+.btn:not(#deleteProfilesBtn):hover{
+  background-color: #f8ba6d;
+  color: white;
+}
+
+/* Boutons nombre de profils */
+.btn-numberProfils{
+  width: 45px;
+  height: 36px;
+  margin-right: 3px;
+}
+
+/* Boutons choisir le sexe */
+.btn-chooseGender{
+  width: 100px;
+  height: 36px;
+  margin-right: 20px;
+}
+
+/* Partie générer et effacer profils */
+.block-generatorAndDelete{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 67px;
+}
+.btn-profilGenerator{
+  margin-right: 15px; 
+}
+.deleteProfilesBtn{
+  cursor: default;
+}
+.deleteProfilesBtn.active{
+  cursor: pointer;
+}
+.deleteProfilesBtn.active:hover{
+  background-color: #f8ba6d;
+  color: white;
+}
+
+/* Paragraphe erreur */
+.error{
+  color: red;
+  text-align: center;
+  padding: 0 5px;
+  display: none;
+}
+.active-error .error{
+  display: block;
+}
+
+/* Partie des utilisateurs générés */
+.user{
+  background-color: white;
+  border-radius: 8px;
+  padding: 0 15px 25px;
+  max-width: 444px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.user-img{
+  position: relative;
+  top: -32px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 136px;
+  height: 136px;
+}
+.img-border-male{
+  border: 4px solid deepskyblue;
+}
+.img-border-female{
+  border: 4px solid hotpink;
+}
+.name{
+  text-align: center;
+  font-weight: 700;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+.icon{
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.contact-information{
+  display: flex;
+  align-items: center;
+  color: grey;
+  margin-bottom: -13px;
+}
+
+/* Media queries */
+@media screen and (min-width: 385px){
+  .container{
+    max-width: 444px;
+  }
+}
+@media screen and (min-width: 711px){
+  .container{
+    max-width: 920px;
+  }
+  fieldset{
+    margin: 30px auto;
+    width: calc(100%/2 - 1rem);
+  }
+  .block-choise{
+    display: flex;
+  }
+  .users{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .user{
+    flex: 0 1 calc(50% - 1rem);
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Générateur d'utilisateurs aléatoires</title>
+    <!-- Police google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Animate On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- link main style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- image logo -->
+      <header>
+        <div class="container-logo">
+          <img class="logo" src="images/logo.png" alt="logo fake user" />
+        </div>
+      </header>
+
+      <main>
+        <div id="container-choise">
+          <div class="block-choise">
+          <!-- Nombre de profils -->
+            <fieldset>
+              <legend>Etape 1 : nombre de profils</legend>
+              <p>Cliquez sur le nombre de profils que vous souhaitez afficher dans la page</p>
+              <button class="btn btn-numberProfils">2</button>
+              <button class="btn btn-numberProfils">4</button>
+              <button class="btn btn-numberProfils">8</button>
+              <button class="btn btn-numberProfils">16</button>
+              <button class="btn btn-numberProfils">32</button>
+            </fieldset>
+            <!-- Choisir le sexe -->
+            <fieldset>
+              <legend>Etape 2 : choisir le sexe</legend>
+              <p>Choississez le sexe des profils ou laissez par défaut pour afficher à la fois des profils de femmes ou d'hommes</p>
+              <button class="btn btn-chooseGender" id="btn-choiseFemale">Femme</button>
+              <button class="btn btn-chooseGender" id="btn-choiseMale">Homme</button>
+            </fieldset>
+          </div>
+          <!-- Générer et effacer profils -->
+          <div class="block-generatorAndDelete">
+            <button class="btn btn-profilGenerator" id="btnProfilGenerator">Générer des profils</button>
+            <button class="btn deleteProfilesBtn" id="deleteProfilesBtn" disabled>Effacer</button>
+          </div>
+          <!-- Erreur en cas de non choix du nombre de profils -->
+          <p class="error">Oups, je n'arrive pas à deviner le nombre de profils que vous voulez générer, veuillez choisir un nombre</p>
+        </div>
+
+        <div>
+          <!-- Profils -->
+          <div class="users" id="users"></div>
+        </div>
+      </main>
+    </div>
+    <!-- Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- File main js -->
+    <script src="main.js"></script>
+  </body>
+</html>
