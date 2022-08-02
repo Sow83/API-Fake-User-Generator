@@ -1,6 +1,7 @@
 ﻿# API-Fake-User-Generator
  
-L’API utilisée est « Random User Generator » qui se trouve à l’adresse suivante : https://randomuser.me
+Fake User Generator est une  application qui génére des profils utilisateurs à partir des données de
+l’API Random User Generator qui se trouve à l’adresse suivante : https://randomuser.me
 
 Au démarrage de l’application, l’utilisateur doit d’effectuer 3 étapes :
 
@@ -8,7 +9,7 @@ Au démarrage de l’application, l’utilisateur doit d’effectuer 3 étapes :
 
 Elle consiste à choisir un nombre de profils à générer dans la page parmi les choix possibles
 
-2 - La deuxième étape: facultatif
+2 - La deuxième étape: facultative
 
 L’utilisateur pourra choisir le sexe des profils à générer(ce choix est optionnel).
 Par défaut, s’il n’y a pas de choix, les profils générés seront à la fois des hommes et
