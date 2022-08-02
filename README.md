@@ -2,7 +2,7 @@
  
 L’API utilisée est « Random User Generator » qui se trouve à l’adresse suivante : https://randomuser.me
 
-Au démarrage de l’application, l’utilisateur doit d’effectuer 3 étapes:
+Au démarrage de l’application, l’utilisateur doit d’effectuer 3 étapes :
 
 1 - La première étape
 
